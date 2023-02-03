@@ -1,0 +1,356 @@
+*,*::after,*::before{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+
+body{
+    font-size: 62.5%;
+    background-color:rgb(224,224,224);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--coler-tex-lait);
+    line-height: 1.2rem;
+   
+  
+}
+
+:root{
+    --coler_praymeri:white;
+    --coler-tex:rgb(32,32,96);
+    --coler-tex-lait:rgb(165, 164, 164);
+    --coler-secndri:rgb(224,255,255);
+
+}
+
+.content{
+    padding: 1.5rem;
+    background-color:var(--coler_praymeri);
+    border-radius: 15px;
+    margin: 0.3rem;
+    color: var(--coler-tex);
+    margin: 1rem 0.75rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow:0 0 0 5px  rgba(0, 0, 0, 1); */
+    box-shadow: 12px 12px 10px 1px rgba(0, 0, 0, .1);
+}
+
+/* top */
+
+.location{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.location--weather{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--coler-tex);
+}
+
+.clock{
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    color: var(--coler-tex);
+}
+
+.location .location--watch{
+    color: var(--coler-tex-lait);
+}
+
+
+.location--weather .icon{
+    margin-right: 0.5rem;
+    color: rgb(96,128,255);
+}
+
+/* profile */
+
+.profile--top{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    align-items: center;
+    margin-bottom: 0.5rem;
+   
+}
+ .top{
+margin-bottom:0.2rem ;
+font-weight: 400;
+color: var(--coler-tex-lait);
+}
+
+ .profile__img{
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    background-color: #ccc;
+    
+}
+
+.profile__img img{
+    width: 100%;
+    height: 100%;
+}
+
+.namejop{
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 1rem
+}
+
+.namejop .top{
+    font-size: 0.65rem;
+}
+
+.info {
+    font-weight: 700;
+
+}
+
+.info p{
+    margin-bottom: 0.2rem;
+}
+
+/* learn */
+.learn .learn--img{
+    align-items: center;
+    width: 100%;
+    height: 17rem;
+    margin-bottom: 1rem;
+}
+
+.learn .learn--img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.learn .learn--tex .titer{
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+
+}
+
+.learn .learn--tex .date{
+    margin-bottom: 1rem;
+}
+
+.learn .butem{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .learn .butem a{
+    font-weight: 700;
+    color: var(--coler-tex);
+    text-decoration: none;
+ }
+
+
+.buttom--smal:hover{
+    background-color:azure;
+}
+
+/* home */
+.connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   padding: 1rem 3rem;
+}
+
+.connect .profile__img {
+    width: 6rem;
+    height:6rem;
+    margin-bottom: 1rem;
+}
+.connect .buttom--smal{
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.connect .info{
+    font-weight: 400;
+    text-align:center;
+    color: var(--coler-tex-lait);
+}
+
+.icon-container{
+    margin-top: 1rem;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+}
+
+.icon-container .icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    
+}
+
+
+.connect .button-container{
+   width: 100%;
+    display: flex;
+  justify-content:space-around;
+  margin-top: 1.5rem;
+}
+
+
+
+/* button */
+.buttom--smal{
+    background-color:rgb(224, 255, 255);
+    padding: 0.5rem 0.9rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.button{
+padding:0.75rem 2rem;
+border-radius: 10px;
+border:solid 1px --coler-tex;
+color: var(--coler_praymeri);
+background-color: var(--coler-tex);
+cursor: pointer;
+
+
+
+}
+
+
+
+.button--secnderi{
+    background-color: var(--coler_praymeri);
+    color: var(--coler-tex);
+}
+
+.button--secnderi:hover{
+   
+    background-color: var(--coler-secndri);
+}
+
+/* calendar */
+ul {list-style-type: none;}
+
+
+.Calendar{
+    width: 50%;
+    text-align: center;
+    width: 100%;
+}
+.Calendar ul{
+    height: 13%;
+}
+.weekdays{
+    padding: 1rem 0;
+
+}
+.weekdays li{
+    display: inline-block;
+    width:13% ;
+}
+.days{
+    padding: 1rem 0;
+
+}
+
+.days  li{
+    list-style-type: none;
+    display:inline-block;
+    width:13% ;
+    border-radius: 100%;
+    height: 30px;
+}
+
+.Calendar{
+    margin-top: 1rem;
+}
+.Calendar-hed{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-align: left;
+}
+
+.Calendar-hed .yers{
+    text-align: right;
+    font-size: 1.5rem;
+
+}
+
+.Calendar .action{
+    background-color: var(--coler-tex);
+    color: var(--coler_praymeri);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    padding: 0.5rem;}
+
+    .next-month{
+        color: var(--coler-tex-lait);
+    }
+
+    .triangle div{
+        background-color: var(--coler-tex);
+        width: 14px;
+        height: 14px;
+        rotate: 45deg;
+        margin-top: 3px;
+    }
+
+    .triangle{
+        width: 14px;
+        height: 7px;
+        overflow: hidden;
+        rotate: 135deg;
+    }
+    .tiangle-holder{
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .yers-holder{
+        display: flex;
+        align-items: flex-end;
+        
+    }
+    /* downlod */
+.downlooding{
+    padding: 0;
+    overflow: hidden;
+    border-radius: 25px;
+ 
+}
+    .downloaded {
+        background-color: rgb(96,128,255);
+        width: 40.6%;
+        padding: 1rem;
+        color: var(--coler_praymeri);
+        display: flex;
+    }
+    .downlod--icon{
+        margin-bottom: 0.2rem;
+        font-weight: 700;
+        font-size: 0.80rem;
+    }
+.downloaded .downlood--taim{
+    color: #ccc;
+}
+    .downlod--icon .icon-holder {
+  font-size: 1.3rem;
+   margin-right: 0.3rem;}
