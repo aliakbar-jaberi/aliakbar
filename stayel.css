@@ -218,9 +218,9 @@ color: var(--coler-tex-lait);
 }
 
 .button{
-padding:0.75rem 2rem;
+padding:0.5rem 1.75rem;
 border-radius: 10px;
-border:solid 1px --coler-tex;
+border: var(--coler-tex) solid 2px;
 color: var(--coler_praymeri);
 background-color: var(--coler-tex);
 cursor: pointer;
