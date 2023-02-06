@@ -341,10 +341,11 @@ ul {list-style-type: none;}
 }
     .downloaded {
         background-color: rgb(96,128,255);
-        width: 40.6%;
+        width: 75.6%;
         padding: 1rem;
         color: var(--coler_praymeri);
         display: flex;
+        max-height: 5rem;
     }
     .downlod--icon{
         margin-bottom: 0.2rem;
@@ -357,3 +358,8 @@ ul {list-style-type: none;}
     .downlod--icon .icon-holder {
   font-size: 1.3rem;
    margin-right: 0.3rem;}
+   .downlood--time{
+    display: flex;
+   } .downlood--time p{
+    margin-left: 0.5rem;
+   }
